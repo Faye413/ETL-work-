@@ -1,0 +1,53 @@
+- name: dw.goal_dim
+  type: dimension
+  scd_type: 2
+  primary_key:
+    name: goal_dim_pk
+    columns: [id]
+  indexes:
+    - name: goal_dim_idx
+      columns: [id]
+  columns:
+    - name: id
+      data_type: text
+      not_null: true
+
+    - name: Channel Name
+      data_type: text
+      not_null: true
+      
+    - name: Budget Amount in Cents
+      data_type: text
+      not_null: true
+
+    - name: Forecasting Date
+      data_type: date
+      not_null: true
+
+    - name: Reason
+      data_type: text
+      not_null: false
+
+    - name: Source
+      data_type: text
+      not_null: true
+
+    - name: Valid from Date
+      data_type: date
+      not_null: true
+
+    - name: Vadlid to Date
+      data_type: date
+      not_null: true
+
+    - name: First of Month Forecasted Date
+      data_type: date
+      not_null: true
+
+    - name: Geo
+      data_type: text
+      not_null: true
+
+    - name: Active
+      data_type: boolean 
+      not_null: true
